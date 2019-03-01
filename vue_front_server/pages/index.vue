@@ -38,9 +38,7 @@ export default {
   // Here is what I changed~
   methods: {
   async fetchSomething() {
-    const ip = await this.$axios.post('http://localhost:3001',{data:123, data2:456},{
-    withCredentials: true //correct
-  })
+    const ip = await this.$axios.post('http://localhost:3001',{data:123, data2:456})
     
     console.log(ip)
   }}
